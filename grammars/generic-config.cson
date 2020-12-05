@@ -15,9 +15,21 @@
 'patterns': [
   {
     'include': '#comment'
+  },
+  {
+    'include': '#statement'
   }
 ]
 'repository':
+  'statement':
+    {
+      'name': 'statement.line.number-sign.generic-config'
+      'match': '\\b(\\w+)=(\\S+)\\b'
+      'captures' = {
+         1 = { 'name' = 'variable' }
+         2 = { 'name' = 'string' }
+      }
+    }
   'comment':
     'patterns': [
       {
