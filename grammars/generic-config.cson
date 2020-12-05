@@ -25,9 +25,9 @@
     {
       'name': 'statement.line.number-sign.generic-config'
       'match': '\\b(\\w+)=(\\S+)\\b'
-      'captures' = {
-         1 = { 'name' = 'variable' }
-         2 = { 'name' = 'string' }
+      'captures': {
+         1: { 'name': 'variable' }
+         2: { 'name': 'string' }
       }
     }
   'comment':
